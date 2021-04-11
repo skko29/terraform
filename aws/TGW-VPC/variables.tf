@@ -1,12 +1,12 @@
 //This section should be verified and modified accordingly.
 variable aws_region {
   description = "AWS Region for deployment"
-  default     = "us-east-2"
+  default     = "us-west-2"
 }
 
 variable aws_key {
   description = "aws_key"
-  default     = "AWS-Ohio-Key"
+  default     = "AWS-Lab-pem"
 }
 
 //Do not create these.  The Terraform will do that.  Just need to make secure
@@ -14,12 +14,12 @@ variable aws_key {
 
 variable bootstrap_s3bucket {
   description = "S3 Bucket Name used to Bootstrap the NGFWs"
-  default     = "djs-tgw-bucket"
+  default     = "sk-tgw-bucket"
 }
 
 variable bootstrap_s3bucket2 {
   description = "S3 Bucket Name used to Bootstrap the NGFWs"
-  default     = "djs-tgw-bucket2"
+  default     = "sk-tgw-bucket2"
 }
 
 //End of the section that MUST be modified to work
